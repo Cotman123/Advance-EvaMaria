@@ -727,8 +727,8 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I can't find any movie with that name, check your spelling🥺")
-        await asyncio.sleep(20)
+        k = await msg.reply("𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 𝙄𝙣 𝘿𝙖𝙩𝙖𝘽𝙖𝙨𝙚😞 \nCHECK IF THE MOVIE HAS BEEN RELEASED AND IF THE SPELLING IS CORRECT THEN ASK THE MOVIE AGAIN")
+        await asyncio.sleep(50)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
